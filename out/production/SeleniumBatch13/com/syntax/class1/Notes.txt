@@ -1,0 +1,68 @@
+Selenium class 01
+What is software testing:
+--identify the correctness and quality of the application
+How many ways can actually test:
+1. manual
+2.automation
+When do we go for automation testing?
+--after manual testing is passed
+--when environment is stable
+--analize our test suite and choose our automation tools
+What automation tools do we now:
+selenium,cucumber,testNG,katalon studio,testComplete,UFT/QTP
+Level of testing:
+1.unit tasting
+2. integretion testing
+3.acceptance
+4.system testing
+Unit testing: developers do unit testing
+Integration: QA or tester do;
+Acceptance: users and clients
+System testing: mostly DevOps(development operations)
+
+Types of testing:
+1.functional: check functionality
+smoke regression sanity
+2.non-functional: include 2 testing:
+performance -load(navantazhennya) or stress, performance(productyvnist') of the application
+in a severe load(sylne navantazhennya)
+and security-how easy is your application to hack(zlamaty);
+
+What is Selenium?
+is a set od tools which is help us to automate web application. it is mainly used
+to perform(vukonyvatu) functional testing
+it is automation testing tool
+is used to automated only web applications
+Selenium components:
+-selenium IDE-it just platform, like inteliji; integrated development environment
+selenium Grid-FireFox plugin
+Selenium Webdriver
+Selenium RC-Remote Control
+What is selenium webdriver?:
+open source automation tool which allows to perform actions on a web application
+Webdriver is an Interface
+
+Advantages of Selenium Webdriver:
+--open source
+--works with different browsers and supports cross browsing testing
+--OS independent--IOS,Windows,Linux
+--works with different programming languages:java,javascript, ruby,python
+
+Disadventage:
+--cannot test desktop application
+--no technical support
+--no built in reports
+--cannot test images,videos,captchas
+
+get() vs navigate()
+--navigate () -have more options:go back.forward,refresh
+--get ()- will wait for the page to fully load whereas is navigate() will not
+get-will not keep the history of the browser whereas navigate() will
+
+close() vs quit()
+close--close the current tab
+quit-close the whole browser
+
+fullscreen VS maximize
+maximize-we see the control panel(back,forward,bookmarks)
+fullscreen-wiil maximize the whole web page, don't see tab)
