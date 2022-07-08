@@ -1,0 +1,10 @@
+<html>
+ <head>
+     <title>my login</title>
+  </head>
+  <body>
+               <input id ="username">
+               <input name="password"> name="pass"
+               <button>login</button>
+   </body>
+ </html>

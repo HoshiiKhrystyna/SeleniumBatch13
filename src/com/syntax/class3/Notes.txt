@@ -1,0 +1,52 @@
+Selenium class 3
+Why do we need XPath and Css Selector?
+--developers may not provide all the locators in html
+--by using xpath css we can identify (rozpiznaty) elements with any given attributes
+What is an Xpath?
+is like a query language(mova zapytiv)  which helps us to identify elements
+uniquely(odnoznachno)  on the web page
+Types of Xpath:
+1.absolute--starts from the starting node of the html,
+it always starts with single slash(/), /html/body/div/div/div;
+Ctrl+f --seach elements
+2.relative X-path--starts from any node in html; it always starts with double slash(//)
+
+Syntax for relative xpath:
+//tagname[@attributes = 'attribute value']; //input[@id = 'email']
+//input[@type = 'text']
+Identifying elements by its text:
+//tagname[text() = 'text value']
+//a[text() = 'Create new account']; //h2[text() = 'Connect with friends and the word']
+//input[@class = 'txt']
+identifying elements by using contains method:
+//tagname[contains(@attributes, 'partial attributes value')]
+//input[contains(@placeholder,'Email')]
+//h2[contains(@text(),'the world')]
+
+starts-with will identify elements by its partial starting value
+//tagname[starts-with(@attribute, 'partial starting attribute value')]
+//input[starts-with(@data-testid, 'royal')]//not working because 1of2, must be 1of1
+//input[starts-with(@aria-label, 'Email')]-its work because 1of1
+
+end-with was used in xpath 1.0, we are using 2.0 and this method is not aviable
+
+Advanced Xpath:
+is based on parent and child,sibling(brat sestra) relationships;
+identifying element by following sibling
+//tagname[@attribute = 'attribute value']/following-sibling::siblingTagname
+//input[@id = 'calFromDate']/following-sibling::img(if we have duplicate we use sibling)
+
+identifying elements by preceding sibling
+//tagname[@attribute = 'attribute value']/preceding-sibling::siblingTagname(z hory do nyzu)
+preceding-poperedniy
+//span[text = '& Orders']/preceding-sibling::span(pochynaty z nyzu dohory)
+
+identifying elements by its parent:
+//tagname[@attribute = 'attribute value']/parent::ParentTagname
+//span[text = '& Orders']/parent::a
+
+identifying elements by its ancestors:
+//input[@id = 'email']/ancestor::form
+
+identifying elements by index:
+(//input[@class = 'ui-datepicker-trigger'])[2]pereyde na druhyy class , vony odynakovi
